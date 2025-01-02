@@ -1,29 +1,3 @@
-/**
- // src/lib/firebase.js
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getAuth } from "firebase/auth";
-
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyAlWmEWJyRmoEKNXyP9AmHA_kFqxoGjZdw",
-  authDomain: "ushop-8d2ad.firebaseapp.com",
-  projectId: "ushop-8d2ad",
-  storageBucket: "ushop-8d2ad.firebasestorage.app",
-  messagingSenderId: "233796620732",
-  appId: "1:233796620732:web:c743ddca4b03764b5c9bb9",
-  measurementId: "G-NK0NMYWEL9"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-const auth = getAuth(app);
-
-export { auth };
-**/
-
-
 // src/lib/firebase.js
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -32,15 +6,14 @@ import { getFirestore } from "firebase/firestore"; // Import Firestore
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAlWmEWJyRmoEKNXyP9AmHA_kFqxoGjZdw",
-  authDomain: "ushop-8d2ad.firebaseapp.com",
-  projectId: "ushop-8d2ad",
-  storageBucket: "ushop-8d2ad.firebasestorage.app",
-  messagingSenderId: "233796620732",
-  appId: "1:233796620732:web:c743ddca4b03764b5c9bb9",
-  measurementId: "G-NK0NMYWEL9"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId:import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
