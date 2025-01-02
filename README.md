@@ -1,134 +1,142 @@
-# UShop 🛍️
+# UShop E-commerce Platform 🛍️
 
-A modern, full-featured e-commerce platform built with cutting-edge technologies to provide a seamless shopping experience.
+UShop is a modern, React-based e-commerce platform inspired by Jumia's mobile app interface. This project is currently under active development and aims to provide a seamless shopping experience with a focus on mobile-first design and user experience.
 
-![GitHub](https://img.shields.io/github/license/yourusername/ushop)
-![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/ushop)
-![GitHub issues](https://img.shields.io/github/issues/yourusername/ushop)
+## 🚧 Project Status
 
-## 🌟 Features
+This project is currently in development. Many features are planned or in progress.
 
-- **User-Friendly Interface**: Clean and intuitive design focused on conversion optimization
-- **Responsive Design**: Seamless experience across all devices and screen sizes
-- **Secure Authentication**: Robust user authentication and authorization system
-- **Product Management**: Easy-to-use dashboard for managing products, categories, and inventory
-- **Shopping Cart**: Real-time cart updates with persistent storage
-- **Payment Integration**: Secure payment processing with multiple gateway options
-- **Order Management**: Comprehensive order tracking and management system
-- **Search & Filters**: Advanced product search with dynamic filtering options
-- **Reviews & Ratings**: Customer feedback system with moderation capabilities
-- **Analytics Dashboard**: Detailed insights into sales, user behavior, and inventory
+### ✅ Implemented Features
+- Responsive mobile-first UI design
+- Product listing with grid view
+- Category browsing
+- Shopping cart functionality
+- Search interface
+- Bottom navigation
+- Flash sales section
+- Basic routing structure
+
+### 🔄 In Progress
+- User authentication (Firebase integration)
+- Protected routes
+- User profile management
+- Password reset functionality
+- Email verification
+- Shopping cart persistence
+
+### 🎯 Planned Features
+- Product details page
+- Wishlist functionality
+- Order management
+- Payment integration
+- Review and rating system
+- Advanced search and filtering
+- Product recommendations
+- Order tracking
+
+## 🛠 Tech Stack
+
+- **Frontend Framework:** React.js
+- **Routing:** React Router v6
+- **Styling:** Tailwind CSS
+- **Authentication:** Firebase Auth
+- **State Management:** React Context API
+- **Icons:** Lucide React
+- **Form Handling:** React Hook Form + Zod
+- **Notifications:** React Hot Toast
+- **API Integration:** Fetch API
+- **Development Environment:** Replit
+
+## 📦 Dependencies
+
+```json
+{
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-router-dom": "^6.22.0",
+    "react-icons": "^5.0.1",
+    "@radix-ui/react-slot": "^1.0.2",
+    "clsx": "^2.1.0",
+    "tailwindcss": "^3.4.1",
+    "@tailwindcss/forms": "^0.5.7",
+    "lucide-react": "^0.263.1",
+    "firebase": "^10.x.x",
+    "react-hot-toast": "^2.x.x",
+    "@hookform/resolvers": "^3.x.x",
+    "zod": "^3.x.x"
+  }
+}
+```
 
 ## 🚀 Getting Started
 
-### Prerequisites
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Reteecent/UShop
+   cd ushop
+   ```
 
-- Node.js (v18.0 or higher)
-- MongoDB (v5.0 or higher)
-- Redis (optional, for caching)
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-### Installation
+3. **Configure Firebase**
+   - Create a Firebase project
+   - Enable Authentication
+   - Copy your Firebase config
+   - Create `src/lib/firebase.js` with your config
 
-1. Clone the repository:
-```bash
-git clone https://github.com/reteecent/ushop.git
-cd ushop
+4. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+## 📁 Project Structure
+
 ```
-
-2. Install dependencies:
-```bash
-npm install
+src/
+├── components/
+│   ├── Navbar.jsx
+│   ├── BottomNav.jsx
+│   └── ProtectedRoute.jsx
+├── contexts/
+│   └── AuthContext.jsx
+├── lib/
+│   └── firebase.js
+├── pages/
+│   ├── Home.jsx
+│   ├── Categories.jsx
+│   ├── Account.jsx
+│   ├── Help.jsx
+│   ├── Login.jsx
+│   ├── Register.jsx
+│   ├── ForgotPassword.jsx
+│   └── UpdateProfile.jsx
+├── styles/
+│   └── globals.css
+└── App.jsx
 ```
-
-3. Set up environment variables:
-```bash
-cp .env.example .env
-# Edit .env with your configuration
-```
-
-4. Start the development server:
-```bash
-npm run dev
-```
-
-Visit `http://localhost:3000` to see the application running.
-
-## 🏗️ Tech Stack
-
-- **Frontend**:
-  - Next.js 14
-  - React
-  - TailwindCSS
-  - Redux Toolkit
-
-- **Backend**:
-  - Node.js
-  - Express.js
-  - MongoDB
-  - Redis (caching)
-
-- **Authentication**:
-  - NextAuth.js
-  - JWT
-
-- **Payment Processing**:
-  - Stripe
-  - PayPal
-
-## 📚 Documentation
-
-Detailed documentation is available in the `/docs` directory:
-
-- [API Documentation](docs/api.md)
-- [Development Guide](docs/development.md)
-- [Deployment Guide](docs/deployment.md)
-- [Contributing Guidelines](docs/contributing.md)
-
-## 🔒 Security
-
-- HTTPS enforced in production
-- Input validation and sanitization
-- XSS protection
-- CSRF protection
-- Rate limiting
-- Security headers implemented
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
-1. Fork the repository
-2. Create your feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'Add amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
+This project is currently under initial development. Once it reaches a stable version, contribution guidelines will be added.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👥 Authors
-
-- **Your Name** - *Initial work* - [@yourusername](https://github.com/Reteecent)
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 🙏 Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- Open source community
+- Design inspired by Jumia's mobile app interface
+- Product data provided by Fake Store API
+- Icons from Lucide React
+- UI components inspired by shadcn/ui
 
-## 📞 Support
+## 📬 Contact
 
-For support, email support@ushop.com or join our Discord channel.
-
-## 🚀 Roadmap
-
-- [ ] Multi-language support
-- [ ] AI-powered product recommendations
-- [ ] Mobile app development
-- [ ] Advanced analytics dashboard
-- [ ] Marketplace features for multiple vendors
+For questions or feedback, please create an issue in the repository.
 
 ---
 
-Made with ❤️ by Yours truly.
+**Note:** This project is a work in progress, and features are being actively added and refined. Documentation will be updated as the project evolves.
