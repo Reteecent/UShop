@@ -1,6 +1,6 @@
 # UShop E-commerce Platform 🛍️
 
-UShop is a modern, React-based e-commerce platform inspired by Jumia's mobile app interface. This project is currently under active development and aims to provide a seamless shopping experience with a focus on mobile-first design and user experience.
+UShop is a modern, React-based e-commerce platform inspired by Jumia's mobile app interface. This project is currently under passive development and aims to provide a seamless shopping experience with a focus on mobile-first design and user experience.
 
 ## 🚧 Project Status
 
